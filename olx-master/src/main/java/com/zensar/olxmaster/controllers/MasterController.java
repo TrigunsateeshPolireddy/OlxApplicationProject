@@ -23,11 +23,11 @@ public class MasterController {
 	static List<Category> category = new ArrayList<Category>();
 	static List<Status> status = new ArrayList<Status>();
 	static {
-		category.add(new Category(1, "Furniture"));
-		category.add(new Category(2, "RealEstate"));
+		category.add(new Category(1, "Bikes"));
+		category.add(new Category(2, "Sofas"));
 		category.add(new Category(3, "Cars"));
 		category.add(new Category(4, "Mobiles"));
-		category.add(new Category(5, "Sports"));
+		category.add(new Category(5, "CricketBats"));
 
 	}
 	static {

@@ -24,7 +24,7 @@ public class SwaggConfig {
 
 private ApiInfo getapiInfo() {
 	
-	return new ApiInfo("Olx Advertisemet", "This is Spring boot App", "1.0.0", "termsOfServiceUrl","9999999", "license", "licenseUrl");
+	return new ApiInfo("Olx Advertisemet", "This is Spring boot App", "1.3.2", "termsOfServiceUrl","9999999", "license", "licenseUrl");
 }
 
 }

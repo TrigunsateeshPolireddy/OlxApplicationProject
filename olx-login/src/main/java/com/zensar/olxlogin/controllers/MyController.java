@@ -29,20 +29,20 @@ public class MyController {
 		
 	}
 	@GetMapping("/user/{id}")
-	public List<RegisterUser> getRegisterUser(@PathVariable int id,@RequestHeader("anand") String token) {
+	public List<RegisterUser> getRegisterUser(@PathVariable int id,@RequestHeader("virat") String token) {
 	
 			return service.getUser(token);
 	}
 
 	
 	@PostMapping("/user/authenticate")
-	public String login(@RequestHeader("anand123") String password) {
+	public String login(@RequestHeader("virat18") String password) {
 		return toString();
 		
 	}
 	
 	@DeleteMapping("/user/logout")
-	public boolean logout(@RequestHeader("dinesh") String token) {
+	public boolean logout(@RequestHeader("trugun") String token) {
 		return service.deleterUser(token);
 	}
 }

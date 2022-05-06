@@ -45,20 +45,20 @@ public class AdvertiseController {
 	@PostMapping("/advertise")
 	public Advertise createAdvertise(Advertise advertise, @RequestHeader("anand") String token) {
 
-		return advertiseService.createAdvertise(advertise, "anand123");
+		return advertiseService.createAdvertise(advertise, "virat18");
 
 	}
 	
 	@GetMapping(value = "/user/advertise/",produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
-	public List<Advertise> getAllAdvertise(@RequestHeader("anand") String token) {
+	public List<Advertise> getAllAdvertise(@RequestHeader("virat") String token) {
 		
-		return advertiseService.getAllAdvertise("anand123");
+		return advertiseService.getAllAdvertise("virat18");
 	}
 	
 	@GetMapping(value = "/user/advertise/{categoryId}",produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
-	public Advertise getAdvertise(@PathVariable long categoryId,@RequestHeader("anand") String token) throws InvalidAdvertiseIdException {
+	public Advertise getAdvertise(@PathVariable long categoryId,@RequestHeader("virat") String token) throws InvalidAdvertiseIdException {
 		
-		return advertiseService.getAdvertise(categoryId, "anand123");
+		return advertiseService.getAdvertise(categoryId, "virat18");
 	}
 	
 	@GetMapping(value = "/advertise/search/{filter}",produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})

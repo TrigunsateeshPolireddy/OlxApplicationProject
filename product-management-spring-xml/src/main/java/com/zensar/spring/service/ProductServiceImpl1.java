@@ -1,5 +1,7 @@
 package com.zensar.spring.service;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
@@ -42,6 +44,21 @@ public class ProductServiceImpl1 implements ProductService {
 	@PreDestroy
 	public void myDestroy() {
 		System.out.println(" inside myDestroy()");
+	}
+
+	public List<Product> readProducts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean deleteProduct(int productId) {
+		// TODO Auto-generated method stub
+		return repositoryImpl.deleteProduct(productId);	
+	}
+
+	public int updateProduct(Product product) {
+		// TODO Auto-generated method stub
+		return repositoryImpl.updateProduct(product);
 	}
 
 }
